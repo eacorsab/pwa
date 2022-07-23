@@ -1,0 +1,27 @@
+<p>nuevo-component si funciona. Holiii</p>
+<app-nuevo-component></app-nuevo-component>
+<div>
+    {{mensaje}}  
+   </div>
+   <div class="card-columns">
+
+    <!-- *ngFor -->
+    <div class="card" *ngFor="let termino of terminos">
+      <div class="card-body">
+         <!-- Enlace -->
+         <a href="#" class="card-link"  href=" {{termino.enlace}} " target="_blank">
+          <h5 class="card-title">
+            <!-- Palabra -->  {{termino.palabra}} 
+          </h5>
+        </a>
+        <p class="card-text">    
+          <!-- Significado -->
+            {{termino.significado}} 
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted text-right">  
+          <!-- Autor -->   {{termino.autor}} 
+        </h6>
+      </div>
+    </div>
+  
+  </div>
